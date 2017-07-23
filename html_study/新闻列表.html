@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新闻列表</title>
+    <style>
+        .new_list_con{
+            width: 600px;
+            height: 290px;
+            border: 1px solid #ddd;
+            margin: 50px auto 0;
+            padding: 0;
+            overflow: hidden;
+
+        }
+        .new_list_con h3{
+            width: 560px;
+            height: 50px;
+            border-bottom: 1px solid #ddd;
+            margin: 0px auto;
+        }
+        .new_list_con h3 span{
+            display: inline-block;
+            height: 50px;
+            border-bottom: 2px solid red;
+            font: 18px/50px 'Noto Sans CJK KR Black';
+            padding: 0 15px;
+
+        }
+        .new_list_con h3 a{
+            font-size: 16px;
+            color: #a7a6a6;
+            line-height: 50px;
+            float: right;
+            text-decoration: none;
+        }
+        .new_list_con ul{
+            width: 560px;
+            height: 238px;
+            list-style: none;
+            padding: 0;
+            margin: 7px auto 0;
+
+        }
+        .new_list_con ul li{
+            height: 38px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .new_list_con ul li a{
+            text-decoration: none;
+            float: left;
+            height: 38px;
+            line-height: 38px;
+
+        }
+        .new_list_con ul li span{
+            float: right;
+            height: 38px;
+            line-height: 38px;
+        }
+        .new_list_con ul li a:before{
+            content: '· ';
+        }
+        .new_list_con ul li a:hover{
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+<div class="new_list_con">
+    <h3><span>新闻标题</span><a href="">更多>></a></h3>
+    <ul>
+        <li><a href="">111111111111111111111111</a><span>2016-06-23</span></li>
+        <li><a href="">222222222222222222222222</a><span>2016-06-23</span></li>
+        <li><a href="">333333333333333333333333</a><span>2016-06-23</span></li>
+        <li><a href="">444444444444444444444444</a><span>2016-06-23</span></li>
+        <li><a href="">555555555555555555555555</a><span>2016-06-23</span></li>
+        <li><a href="">666666666666666666666666</a><span>2016-06-23</span></li>
+    </ul>
+</div>
+</body>
+</html>

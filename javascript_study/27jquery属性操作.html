@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+//           $('#div1').html('<span>haha</span>');//设置html内容 重置之前存在的内容
+           var $htm = $('#div1').html(); //取出html 内容
+           alert($htm);
+//           $('#div1').html('<span>haha</span>');//设置html内容 重置之前存在的内容
+            var $html = $('#div1').text();
+            alert($html);
+//            $('#div1').text('<span>haha</span>'); //设置text内容 重置之前存在的内容
+            var $src = $('ul:last img').attr('src'); //获取图片地址
+            alert($src);
+            var $src = $('ul:last img').attr({src:'../image/001.jpg',alt:'山川'}) //设置图片地址
+        })
+    </script>
+</head>
+<body>
+<div id="div1">
+    <ul>1</ul>
+    <ul>2</ul>
+    <ul>3</ul>
+    <ul><img src="../image/logo.png"></ul>
+</div>
+</body>
+</html>

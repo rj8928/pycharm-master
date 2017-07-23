@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            $('#btn').click(function () {
+                $('.box').toggleClass('box1'); //自动添加，移除属性
+            })
+
+
+        })
+    </script>
+
+    <style type="text/css">
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+        .box1{
+
+            background-color: gold;
+
+        }
+    </style>
+</head>
+<body>
+<input type="button" name="" value="切换" id="btn">
+<div class="box"></div>
+</body>
+</html>

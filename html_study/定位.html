@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定位</title>
+    <style>
+        .con{
+            width: 400px;
+            height: 400px;
+            margin: 100px auto 0;
+            border: 1px solid #000000;
+            position: relative;
+        }
+        .con div{
+            width: 200px;
+            height: 100px;
+            background-color: gold;
+            margin: 10px;
+            text-align: center;
+            line-height: 100px;
+        }
+        body .box1{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            background-color: green;
+            z-index: 2;
+        }
+        body .box2{
+            position: absolute;
+            width: 100px;
+            height: 50px;
+            left: 70px;
+            top: 70px;
+            background-color: pink;
+            z-index: 5;
+        }
+        body .box3{
+            position: absolute;
+            left: 60px;
+            top: 60px;
+            background-color: gold;
+            z-index: 4;
+        }
+    </style>
+</head>
+<body>
+<div class="con">
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</div>
+
+</body>
+</html>

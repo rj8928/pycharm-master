@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=q, user-scalable=no,initial-scale=1.0,
+     maximum-scale=1.0,minimum-scale=1.0">
+    <title>Title</title>
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <style type="text/css">
+        body{
+             touch-action: none;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+        .list{
+            width: 90%;
+        }
+        li{
+            width: 100%;
+            position: relative;
+            height: 50px;
+            font-size: 30px;
+            overflow: hidden;  /*很重要*/
+
+        }
+        .list li a{
+            float: left;
+        }
+        span{
+            position: absolute;
+            right: -75px;
+
+
+        }
+    </style>
+    <script type="text/javascript">
+
+        $(function () {
+            $('li').tap(function () {
+                //alert('tap');
+            });
+
+            $('li').click(function () {
+                //alert('click');
+            });
+
+            $('li').longTap(function () {
+                //alert('longTap');
+            });
+
+            $('li').swipeUp(function () {
+
+                //alert('up');
+            });
+            $('li').swipeLeft(function () {
+                $(this).children('span').animate({right:0})
+            });
+            $('li').swipeRight(function () {
+                //alert('right');
+            });
+            $('li').swipeDown(function () {
+                //alert('down');
+            });
+
+            $('.list span').click(function () {
+                $(this).parent().animate({height:0},function () {
+                    $(this).remove();
+                })
+            })
+        })
+
+    </script>
+</head>
+<body>
+<ul class="list">
+    <li><a href="#">新闻标题111</a><span>删除</span> </li>
+    <li><a href="#">新闻标题222</a><span>删除</span> </li>
+    <li><a href="#">新闻标题333</a><span>删除</span> </li>
+    <li><a href="#">新闻标题444</a><span>删除</span> </li>
+    <li><a href="#">新闻标题555</a><span>删除</span> </li>
+</ul>
+</body>
+</html>

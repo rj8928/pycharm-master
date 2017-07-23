@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload = function () {
+            var oIn1 = document.getElementById('text1');
+            var oIn2 = document.getElementById('text2');
+            var oBtn = document.getElementById('Btn');
+            var oSel = document.getElementById('sel');
+            oBtn.onclick = function (){
+
+            var a = oIn1.value;
+
+            var b = oIn2.value;
+            var d = parseInt(oSel.value);
+            if (a=="" || b==""){
+                            alert("输入框不能为空");
+                            return false;
+                        }
+            if(isNaN(a)||isNaN(b)){
+                alert('请输入数字');
+                return false;
+            }
+            a = parseFloat(a);
+            b = parseFloat(b);
+            if (d ==1){
+                add();
+            }
+            else if (d ==2){
+             dec();
+            }
+            else if (d == 3){
+             chen();
+            }
+            else if (d == 4){
+             chu();
+            }
+
+
+
+
+
+            function add() {
+                var c = (a*100+b*100)/100;
+                alert('结果为'+c);
+            }
+            function dec() {
+                var c = (a*100-b*100)/100;
+                alert('结果为'+c);
+            }
+            function chen() {
+                var c = ((a*100)*(b*100))/10000;
+                alert('结果为'+c)
+            }
+            function chu() {
+                var c = (a*100)/(b*100);
+                alert('结果为'+c);
+            }
+            }
+
+        }
+    </script>
+</head>
+<body>
+<INPUT TYPE="text" name="" id="text1">
+<select id="sel">
+    <option value="1">+</option>
+    <option value="2">-</option>
+    <option value="3">*</option>
+    <option value="4">/</option>
+</select>
+<input type="text" name="" id="text2">
+<input type="button" name="" value="计算" id="Btn">
+</body>
+</html>

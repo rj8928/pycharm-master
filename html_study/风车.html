@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>风车旋转</title>
+    <style>
+        div{
+            width: 400px;
+            height: 400px;
+            margin: 50px auto;
+            position: relative;
+        }
+        img{
+            position: absolute;
+            animation: fengche 500ms linear infinite;
+            animation-play-state: paused;
+        }
+        @keyframes fengche {
+                25%{
+            transform: rotate(90deg);
+        }
+                50%{
+            transform: rotate(180deg);
+        }
+                75%{
+            transform: rotate(270deg);
+        }
+                100%{
+            transform: rotate(360deg);
+        }
+        }
+        img:hover{
+            animation-play-state: running;
+        }
+    </style>
+
+</head>
+<body>
+<div><img src="../image/fengche.png"></div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#div1').nextAll('p').css({color:'red'});
+            //选择父级
+            $('#span01').parent().css({width:'200px',height:'200px',background:'gold'});
+            //选择离自己最近的元素 可以是父级也可以是子级
+            $('#span02').closest('div').css({width:'100px',height:'100px',background:'pink'});
+            //选择下面的所有子元素
+            $('.list').children().css({background:'gold',height:'30px',marginBottom:'10px'
+            }).end().css({background:'green'});
+
+
+        })
+    </script>
+</head>
+<body>
+<div id="div1">div元素</div>
+<div id="div2">div元素2</div>
+<p>p元素</p>
+<div id="div3" >
+    <a href="#">百度</a>
+    <span id="span01">span元素</span>
+    <div>
+        <p>
+            <a href="#">xixiwang</a>
+    <span id="span02">span元素</span>
+        </p>
+    </div>
+</div>
+
+
+
+<ul class="list">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+</ul>
+</body>
+</html>

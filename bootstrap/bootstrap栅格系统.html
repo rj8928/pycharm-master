@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap 基本文档结构</title>
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <style type="text/css">
+        div[class*='col-']{
+            height: 50px;
+            border: 1px solid #000;
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+<div class="container" style="background: pink">ddd</div> //container设置padding15 row设置margin-15使
+不使用row也能让文字对齐
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3">col-lg-3</div>
+        <div class="col-lg-3">col-lg-3</div>
+        <div class="col-lg-3">col-lg-3</div>
+        <div class="col-lg-3">col-lg-3</div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">col-md-4</div>
+        <div class="col-md-4">col-md-4</div>
+        <div class="col-md-4">col-md-4</div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">col-sm-3</div>
+        <div class="col-sm-6">col-sm-6</div>
+        <div class="col-sm-3">col-sm-3</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1">col-xs-1</div>
+        <div class="col-xs-7">col-xs-7</div>
+        <div class="col-xs-4">col-xs-4</div>
+    </div>
+
+
+</div>
+</body>
+</html>

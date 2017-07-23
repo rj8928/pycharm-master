@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.box').draggable({
+                axis:'x', //约束元素拖动的轴向
+                containment:'parent', //约束元素在父级内拖动
+                opacity:0.6,  //拖动时的透明度
+                drag:function (ev,ui) {
+
+                    //console.log(ui)
+                    var nowleft = ui.position.left;
+                    $('.progress').css({width:nowleft});
+                    $('.slide_count').val(parseInt((nowleft)*100/570));
+
+                }
+
+            }) //设置可拖动
+        })
+
+    </script>
+    <style type="text/css">
+        .head{
+            width: 650px;
+            height: 32px;
+            margin: 50px auto 0;
+        }
+        .con{
+            width: 600px;
+            border: 1px solid #ccc;
+            float: left;
+            position: relative;
+
+
+        }
+        .box{
+            width: 40px;
+            height: 40px;
+            background-color: gold;
+            cursor: pointer;
+        }
+        .progress{
+            position: absolute;
+            width: 0;
+            height: 40px;
+            top: 0;
+            background-color: #a7a6a6;
+            opacity: 0.5;
+            filter: alpha(opacity=30);
+        }
+        .slide_count{
+            height: 40px;
+            width: 40px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+<div class="head">
+    <div class="con">
+    <div class="box"></div>
+    <div class="progress"></div>
+    </div>
+    <input type="button" name="" id="btn" class="slide_count" value="0">
+</div>
+
+
+</body>
+</html>

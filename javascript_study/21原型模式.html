@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function Person(name,age,job) {
+            this.name = name;
+            this.age = age;
+            this.job = job;
+
+            
+        };
+        Person.prototype.showname = function () {
+            alert(this.name);
+
+        };
+        Person.prototype.showage = function () {
+            alert(this.age);
+
+        };
+        Person.prototype.showjob = function () {
+            alert(this.job);
+
+        };
+        var tom = new Person('tom',18,'python');
+        var jack = new Person('jack',19,'java');
+        tom.showname();
+        jack.showage();
+        alert(tom.showjob==jack.showjob);
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+<h3>用户注册</h3>
+<form action="http://www.cctv.com" method="get">
+
+    <div>
+        <label for="username">用户名:</label>
+        <input type="text" name="username" id="username">  <!--输入文本框-->
+    </div>
+
+    <br>
+
+    <div>
+       <label for="pwd">密码:</label>
+        <input type="password" name="pwd" id="pwd">
+    </div>
+
+    <div>
+        <lable>性别:</lable>                     <!--单选按钮-->
+        <input type="radio" name="gender" id="male" value="0"> <label for="male">男</label>
+        <input type="radio" name="gender" id="female" value="1"> <label for="female">女</label> <!--用户体验小细节-->
+    </div>
+
+    <div>
+        <label>爱好：</label>
+        <input type="checkbox" name="like" value="game"> 游戏
+        <input type="checkbox" name="like" value="ball"> 打球 <!--选择表单-->
+        <input type="checkbox" name="like" value="book"> 看书
+    </div>
+
+    <div>
+        <label>籍贯:</label>
+        <select name="select">
+            <option value="0">北京</option>
+            <option value="1">上海</option>
+            <option value="2">广州</option>   <!--下拉表单-->
+            <option value="3">深圳</option>
+            <option value="4">武汉</option>
+        </select>
+    </div>
+
+    <div>
+        <label>照片</label>
+        <input type="file" name=""> <!-- 文件上传-->
+    </div>
+
+    <div>
+        <label>个人描述:</label>
+        <textarea name="info"></textarea>      <!--大段文字输入-->
+    </div>
+    <br>
+    <input type="submit" name="" value="提交">
+    <input type="reset" name="" value="重置">
+    <input type="image" name="" src="../image/apple.png"> <!--不建议使用图片提交-->
+    <br>
+    <input type="button" name="" value="anniu">
+    <input type="hidden" name="hid" value="9999"> <!--存储值-->
+
+</form>
+</body>
+</html>

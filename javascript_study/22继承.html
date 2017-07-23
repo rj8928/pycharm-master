@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function Person(name,age) {
+            this.name = name;
+            this.age = age;
+
+        };
+        Person.prototype.showage = function () {
+            alert(this.age);
+        };
+        Person.prototype.showname = function () {
+            alert(this.name);
+        };
+//            call继承属性
+        function  haha(name,age,job) {
+            Person.call(this.name,age);
+//            Person.apply(this,[name,age]); apply也可以
+            this.job = job;
+        }
+//        创建一个实例通过prototype继承方法
+        haha.prototype = new Person();
+        haha.prototype.showjob = function () {
+            alert(this.job);
+        };
+        var tom = new haha('tom',18,'python');
+        tom.showjob();
+        tom.showage();
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

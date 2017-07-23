@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('div1').title = '我看到了';
+            document.getElementById('div1').style = 'color:green'
+//            操作属性
+
+            var link1 = document.getElementById('link1');
+            link1.title = '百度网'
+            link1.href= 'http://www.cctv.com'
+            alert(link1.id)
+
+
+
+
+
+        }
+    </script>
+</head>
+<body>
+    <div id="div1" class="div" style="color: red" title="我是div元素">一个div元素</div>
+    <a href="#" id="link1">百度</a>
+</body>
+</html>

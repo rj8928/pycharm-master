@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .con{
+            width: 500px;
+            height: 375px;
+            margin: 100px auto 0;
+            position: relative;
+
+        }
+        .pic,.info{
+            width: 500px;
+            height: 375px;
+            position: absolute;
+            top:0;
+            transform-style:preserve-3d ;
+            backface-visibility: hidden;
+            transform: perspective(800px) rotateY(0deg);
+            transition: all 500ms ease;
+
+        }
+        .info{
+            background-color: rgba(0,0,0,0.5);
+            text-align: center;
+            line-height: 375px;
+            transform:rotateY(180deg);
+
+        }
+        .con:hover .pic{
+            transform: perspective(800px) rotateY(180deg);
+        }
+        .con:hover .info{
+            transform: perspective(800px) rotateY(0deg);
+        }
+    </style>
+</head>
+<body>
+<div class="con">
+    <div class="pic"><img src="../image/002-02.jpg"></div>
+    <div class="info">图片文字说明</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,173 @@
+body{
+    font-family: "Microsotf Yahei";
+}
+.main_warp{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: #efefef;
+}
+.header{
+    height: 50px;
+    background-color: #37ab40;
+    position: relative;
+}
+    .header .logo{
+        display: block;
+        width: 88px;
+        height: 35px;
+        margin: 7px auto 0;
+    }
+    .header .search{
+        width: 34px;
+        height: 34px;
+        background: url("../images/icons.png") 0px -638px no-repeat;
+        background-size: 58px 670px;
+        position: absolute;
+        right: 15px;
+        top: 12px;
+    }
+    .header .logo img{
+        width: 100%;
+    }
+.center_warp{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+    bottom: 50px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.center_warp .slide{
+    width: 100%;
+}
+.center_warp .menu {
+    height: 185px;
+    margin-top: 10px;
+    background-color: #ffffff;
+}
+.center_warp .menu ul{
+    margin-top: 12px;
+}
+.center_warp .menu li{
+    width: 25%;
+    height: 81px;
+    float: left;
+}
+.center_warp .menu li a{
+    display: block;
+    width: 56px;
+    height: 56px;
+    margin: 0 auto;
+    background: url("../images/icons.png") left 0px no-repeat;
+    background-size: 58px 670px;
+}
+.center_warp .menu li:nth-child(2) a{
+    background-position: left -60px;
+}
+.center_warp .menu li:nth-child(3) a{
+    background-position: left -120px;
+}
+.center_warp .menu li:nth-child(4) a{
+    background-position: left -180px;
+}
+.center_warp .menu li:nth-child(5) a{
+    background-position: left -240px;
+}
+.center_warp .menu li:nth-child(6) a{
+    background-position: left -300px;
+}
+.center_warp .menu li:nth-child(7) a{
+    background-position: left -360px;
+}
+.center_warp .menu li:nth-child(8) a{
+    background-position: left -420px;
+}
+
+.center_warp .menu li h2{
+    text-align: center;
+    height: 25px;
+    font: bold 13px/25px "Microsotf Yahei";
+    color: #666666;
+}
+.center_warp .classify{
+    height: 802px;
+    margin-top: 10px;
+    background-color: #ffffff;
+}
+.center_warp .classify .classify_apple{
+    margin:13px auto 0;
+
+}
+.center_warp .classify .classify_apple h3{
+    margin-left: 10px;
+    border-left: 4px solid orange;
+    text-indent: 20px;
+}
+.center_warp .classify .classify_apple a {
+    color: #666666;
+    font-size: 14px;
+    margin-right: 10px;
+
+}
+.center_warp .classify .banner img{
+    display: block;
+    width: 355px;
+    height: 90px;
+    margin: 10px auto 0;
+}
+.center_warp .classify .goods ul{
+    margin-top: 20px;
+}
+.center_warp .classify .goods ul li{
+    width: 33%;
+    float: left;
+
+
+}
+.center_warp .classify .goods ul li img{
+    display: block;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+}
+.center_warp .classify .goods ul li h4{
+    display: block;
+    text-indent: 10px;
+    color: #666666;
+}
+.center_warp .classify .goods .num h5{
+    color: #666666;
+    margin:13px 0 0 10px;
+    font-size: 12px;
+
+}
+.center_warp .classify .goods .price{
+    color: red;
+    margin: 8px 0 0 10px;
+    font-family: "Microsotf Yahei";
+    font-size: 12px;
+    clear: left;
+}
+.center_warp .classify .goods .goods_car a{
+    display: block;
+    width: 40px;
+    height: 40px;
+
+    background: url("../images/icons.png") 5px -475px no-repeat;
+    background-size: 58px 670px;
+    margin:7px 30px 0 0;
+}
+.footer{
+    border-top: 10px solid #efefef;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    background-color: #ffffff;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>走路</title>
+    <style>
+        div{
+            width: 120px;
+            height: 182px;
+            margin: 100px auto;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid #000000;
+
+        }
+        div img{
+            display: block;
+            width: 960px;
+            height: 182px;
+            left: 0;
+            top: 0;
+            position: absolute;
+            animation: walking 1s steps(8) infinite;
+            animation-play-state: paused;
+        }
+        div img:hover{
+            animation-play-state: running;
+        }
+        @keyframes walking {
+            from{
+                left: 0px;
+            }
+            to{
+                left: -960px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div>
+    <img src="../image/walking.png">
+</div>
+</body>
+</html>

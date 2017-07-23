@@ -1,0 +1,28 @@
+body{
+    font-family: "Microsotf Yahei";
+}
+.main_warp{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: #efefef;
+}
+.header{
+    height: 2.5rem;
+    background-color: #37ab40;
+    position: relative;
+}
+
+
+.footer{
+    border-top: 10px solid #efefef;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2.5rem;
+    background-color: #ffffff;
+    width: 100px;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        window.onload  = function () {
+            var Dat = window.location.search;
+            var  hash = window.location.hash;
+//            alert(Dat)
+            var oSpan = document.getElementById('span1');
+            var arr = Dat.split('=');
+//            alert(arr);
+            var  name =arr[1];
+            oSpan.innerHTML= name;
+            alert(hash)
+        }
+
+
+//        alert(Dat);
+    </script>
+</head>
+<body>
+<div class="box1" id="div1">欢迎<span id="span1"></span>访问我的主页</div>
+
+</body>
+</html>

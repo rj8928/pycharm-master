@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#btns input').click(function () {
+                //this是原生的对象
+                $(this).addClass('cur').siblings().removeClass('cur');
+//                alert($(this).index()); jquery带索引值
+                $('#contents div').eq($(this).index()).addClass('active')
+                    .siblings().removeClass('active');
+
+            });
+        })
+
+    </script>
+    <style type="text/css">
+        .btns{
+            width: 500px;
+            height: 50px;
+        }
+        .btns input{
+            width:100px;
+            height: 50px;
+            background-color: #a7a6a6;
+            color: #ffff;
+            border: 0px;
+        }
+        .btns input.cur{
+            background-color: gold;
+        }
+        .contents div{
+            width: 500px;
+            height: 300px;
+            background-color: gold;
+            display: none;
+            line-height: 300px;
+            text-align: center;
+        }
+        .contents div.active{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="btns" id="btns">
+<input type="button" value="tab01" class="cur">
+<input type="button" value="tab02">
+<input type="button" value="tab03">
+</div>
+<div class="contents" id="contents">
+    <div class="active">tab文字1</div>
+    <div>tab文字2</div>
+    <div>tab文字3</div>
+</div>
+</body>
+</html>

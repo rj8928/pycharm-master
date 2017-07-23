@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        var count = (function () {
+            var a = 0;
+            function bb() {
+                a++;
+                return a;
+            }
+            return bb;
+        })();
+        alert(count());
+        alert(count());
+    </script>
+</head>
+<body>
+
+</body>
+</html>

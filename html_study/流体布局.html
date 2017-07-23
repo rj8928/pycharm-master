@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .con{
+            margin: 20px 0;
+            border: 1px solid #000;
+            overflow: hidden;
+        }
+        .con div{
+            height: 200px;
+            width: 23%;
+            background-color: gold;
+            text-align: center;
+            line-height: 50px;
+            float: left;
+            margin: 30px 1%;
+        }
+        @media(max-width: 700px) {
+
+            .con div{
+                width: 46%;
+                margin: 30px 2%;
+            }
+
+
+        }
+        @media(max-width: 500px) {
+
+            .con div{
+                width: 90%;
+                margin: 30px 5%%;
+            }
+
+
+        }
+    </style>
+</head>
+<body>
+<div class="con">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+
+</div>
+</body>
+</html>

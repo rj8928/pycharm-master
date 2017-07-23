@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            var $span = $('<span>span元素</span>');
+            var $p = $('<p>p段落元素</p>');
+            var $a = $("<a href='#'>xixi</a>");
+            var $h = $('<h1>页面标题</h1>');
+//            $('#div1').append($span);
+//            $('#div1').append($p);
+//            $('#div1').prepend($a);
+//            $('#div1').before($h);
+            //增加节点两种写法
+            $span.appendTo($('#div1'));
+            $p.appendTo($('#div1'));
+            $a.prependTo($('#div1'));
+            $h.insertBefore($('#div1'));
+            $('#div1').remove();
+
+
+        })
+
+
+
+
+    </script>
+</head>
+<body>
+<div id="div1"></div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .pop_con{
+            display: none;
+        }
+        .pop{
+            width: 300px;
+            height: 200px;
+            background-color: #f0f0f0;
+            color: red;
+            z-index: 9999;
+            text-align: center;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            margin-left: -150px;
+            margin-top: 250px;
+        }
+        .mask{
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #a7a6a6;
+            opacity: 0.5;
+            filter: alpha(opacity=30);
+            z-index: 9990;
+        }
+
+
+
+
+    </style>
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var read = $.cookie('hasread');
+            if(read == undefined){
+                $('.pop_con').show();
+                $('.pop').animate({marginTop:-150,opacity:1});
+            }
+            $('.hasknow').click(function () {
+                $.cookie('hasread','ok',{expires:7,path:'/'})
+                $('.pop_con').hide();
+            })
+
+
+        })
+    </script>
+</head>
+<body>
+<div class="pop_con">
+    <div class="pop">
+        <span>x</span>
+        <p>我们的网站有优惠了，赶快行动吧</p>
+        <p class="hasknow">我知道了</p>
+    </div>
+    <div class="mask"></div>
+</div>
+<h1>网站首页</h1>
+</body>
+</html>
