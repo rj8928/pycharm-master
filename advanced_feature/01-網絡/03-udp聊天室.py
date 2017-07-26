@@ -1,4 +1,6 @@
+import time
 from socket import *
+
 from multiprocessing import Queue
 
 def main():

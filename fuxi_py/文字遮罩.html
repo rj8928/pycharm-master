@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .box{
+            width: 622px;
+            height: 350px;
+            position: relative;
+            overflow: hidden;
+        }
+        .box .pic{
+            width: 622px;
+            height: 350px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .box .info{
+            width: 622px;
+            height: 100px;
+           position: absolute;
+            left: 0;
+            top: 350px;
+            color: red;
+            background-color: #000000;
+            opacity: 0.5;
+            filter: alpha(opacity=50);
+            transition: all 500ms ease;
+        }
+        .box:hover .info{
+            top: 250px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="pic">
+        <img src="../image/002.jpg">
+    </div>
+    <div class="info">
+        hahahaahahahahahahaha
+    </div>
+</div>
+</body>
+</html>
